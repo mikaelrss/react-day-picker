@@ -9,6 +9,13 @@ function CustomOverlay({ classNames, selectedDay, children }) {
     <div className={classNames.overlayWrapper} style={{ marginLeft: -100 }}>
       <div className={classNames.overlay}>
         <h3>Hello day picker!</h3>
+        <button
+          onClick={() => {
+            console.log("This should show, but doesn't on Safari");
+          }}
+        >
+          Clik me
+        </button>
         <p>
           {selectedDay
             ? `You picked: ${selectedDay.toLocaleDateString()}`

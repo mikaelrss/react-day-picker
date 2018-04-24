@@ -318,6 +318,7 @@ export default class DayPickerInput extends React.Component {
   }
 
   handleInputBlur(e) {
+    debugger;
     const target = e.relatedTarget;
     if (!isIE()) {
       this.showOverlayBasedOnTargetNode(target);
